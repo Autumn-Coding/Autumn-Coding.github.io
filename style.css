@@ -1,0 +1,219 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a, h1, h2, p {
+  font-family: 'Comfortaa';
+}
+
+body {
+  background: #e6f2ff;
+}
+
+#DevScript {
+  color: #333333;
+  font-family: 'Noto Serif SC', serif;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #001f4d;
+  font-weight: bold;
+}
+
+#header, #footer {
+  background: white;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+  z-index: 10;
+}
+
+#header {
+  top: 0px;
+  height: 100px;
+  position: fixed;
+}
+
+nav {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  text-align: center;
+  flex-grow: 1;
+  line-height: 100px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #204781;
+  color: white;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+.pageHeader {
+  background-image: linear-gradient(to right, rgba(0,51,128,1) 10%, rgba(0,51,128,0.1));
+  width: 85%;
+  padding: 15px;
+  top: 150px;
+  color: white;
+}
+
+.contentBoxSmall {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contentBoxSmall > div {
+  display: flex;
+  width: 37%;
+  height: 300px;
+  margin: 50px;
+  flex-grow: 1;
+}
+
+.contentBoxLarge {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.contentBoxSmall .contentHeader {
+  background: #003380;
+  width: 40%;
+  height: 100%;
+  padding: 15px;
+  color: white;
+  align-items: center;
+  display: flex;
+}
+
+.contentBoxSmall .contentHolder {
+  background: white;
+  width: 60%;
+  height: 100%;
+  padding: 15px;
+  color: #003380;
+  align-items: center;
+  display: flex;
+}
+
+.contentBoxLarge .contentHolder {
+  background: white;
+  width: 80%;
+  height: 500px;
+  padding: 15px;
+  color: #003380;
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #003380, #ffffff);
+  margin: 50px;
+}
+
+
+#homelinks .contentHeader {
+  justify-content: center;
+}
+
+#aboutContent .contentHeader, #aboutContent .contentHolder {
+  align-items: flex-start;
+}
+
+
+.question {
+  background-color: #003380;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  margin: 30px 0px 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.active, .question:hover {
+  background-color: #204781;;
+}
+
+.answer {
+  padding: 0px 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.pageHeader {
+  background-image: linear-gradient(to right, rgba(0,51,128,1) 10%, rgba(0,51,128,0.1));
+  width: 85%;
+  padding: 15px;
+  color: white;
+}
+
+
+#aboutButton {
+  background-image: url("https://images.unsplash.com/photo-1544731612-de7f96afe55f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80");
+}
+
+#faqButton {
+  background-image: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80");
+}
+
+#contactButton {
+  background-image: url("https://images.unsplash.com/photo-1512626120412-faf41adb4874?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80");
+}
+
+#creditButton {
+  background-image: url("https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80");
+}
+
+#aboutButton, #faqButton, #contactButton, #creditButton {
+  background-size: cover;
+  position: center;
+}
+
+a.contentHeader {
+  text-shadow: 2px 2px 2px black;
+  flex-grow: 1;
+  border: 3px solid white;
+  border-radius: 0pt 0pt 50pt 0pt;
+}
+
+
+.hide {
+  display: none !important;
+}
