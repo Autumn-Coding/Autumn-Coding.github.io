@@ -136,11 +136,10 @@ a {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   border-radius: 0px;
-  margin-top: 0px;
+  margin: 0px;
 }
 #sidebar a {
   text-align: center;
-  margin: 0px;
 }
 .carousel {
   width: 600px;
