@@ -140,6 +140,7 @@ a {
 }
 #sidebar a {
   text-align: center;
+  margin: 0px;
 }
 .carousel {
   width: 600px;
