@@ -8,12 +8,12 @@ a, h1, h2, p {
 }
 
 body {
-  background: #e6f2ff;
+  background: #D2B4DE;
 }
 
 a {
   text-decoration: none;
-  color: #001f4d;
+  color: #0E385A;
   font-weight: bold;
 }
 
@@ -24,7 +24,7 @@ a {
   z-index: 10;
 }
 
-#footer, #sidebar, #top div {
+#footer, #sidebar, #header {
   background: white;
   display: flex;
   flex-direction: column;
@@ -39,13 +39,14 @@ a {
 }
 
 #header {
-  padding-top: 30px;
+  padding: 30px 5px;
 }
 
 #menudrop {
   background: white;
   border: none;
   padding: 15px;
+  padding-top: 0px;
   width: 100%;
   text-align: center;
   text-decoration: none;
@@ -60,6 +61,7 @@ a {
   padding: 10px;
   border-radius: 10px;
   position: fixed;
+  margin-top: 50px;
 }
 
 #sidebar a {
@@ -67,31 +69,12 @@ a {
   transition: 0.3s;
 }
 
-
-@media (max-width: 800px){
-#menudrop {
-  display: block;
-}
-#sidebar {
-  width: 100%;
-  max-height: 0;
-  padding: 0px;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  border-radius: 0px;
-}
-#sidebar a {
-  width: 100%;
-  text-align: center;
-}
-}
-
 .show {
   display: flex;
 }
 
 .pageHeader {
-  background-image: linear-gradient(to right, rgba(0,51,128,1) 10%, rgba(0,51,128,0.1));
+  background-image: linear-gradient(to right, rgba(31, 97, 141,1) 10%, rgba(0,51,128,0.1));
   width: 100%;
   padding: 30px 15px;
   top: 150px;
@@ -104,6 +87,7 @@ a {
   margin: 50px;
   padding: 40px 30px 200px;
   width: 80%;
+  color: #0E385A;
 }
 
 #creditList {
@@ -126,12 +110,34 @@ a {
 
 .carousel-item {
   height: 500px;
-  background: #001f4d;
-  color: white;
+  background: #1F618D;
+  color: white !important;
   padding: 30px 100px;
 }
 
 .carousel {
   width: 600px;
   margin: 30px 0px;
+}
+
+
+
+
+@media (max-width: 900px){
+#menudrop {
+  display: block;
+}
+#sidebar {
+  width: 100%;
+  max-height: 0;
+  padding: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 0px;
+  margin-top: 0px;
+}
+#sidebar a {
+  width: 100%;
+  text-align: center;
+}
 }
