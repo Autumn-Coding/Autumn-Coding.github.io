@@ -3,49 +3,307 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
-  <title>DevScript - About Us</title>
+  <title>Lithium or Hydrogen?</title>
+
+
+<!-- BOOTSTRAP STUFF -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+  rel="stylesheet"
+/>
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+></script>
+
+
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+
+<div id="top">
   <div id="header">
-    <h1 id="DevScript">DevScript</h1>
-    <nav>
-      <a href="/index.html">Home</a>
-      <a href="/about.html">About Us</a>
-      <a href="/faq.html">FAQ</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/credit.html">Credit</a>
-    </nav>
+    <h1>Lithium or Hydrogen?</h1>
+  </div>
+  <div id="menudrop"><p>menu</p><p>v</p></div>
+  <nav id="sidebar">
+    <a href="#">Top</a>
+    <a href="#lithium-ion-batteries">Lithium-ion Batteries</a>
+    <a href="#hydrogen-fuel-cells">Hydrogen Fuel Cells</a>
+    <a href="#alternatives">Other Alternatives</a>
+    <a href="#comparison">Comparison</a>
+    <a href="#conclusion">Conclusion</a>
+    <a href="#references">References</a>
+    <a href="#credits">Credits</a>
+  </nav>
+</div>
+
+
+
+<div id="lithium-ion-batteries" class="page">
+  <div class="pageHeader"><h1>Lithium-ion Batteries</h1></div>
+
+
+
+<div id="lithium-info" class="carousel slide" data-mdb-ride="carousel" data-mdb-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h3>Introduction</h3>
+      <p>Lithium-ion batteries are multicell batteries that make use of lithium and carbon electrodes to create a rechargeable battery that is powerful, long lasting and low maintenance. The research for these lithium-ion batteries was started by Stanley Whittingham during the 1970s oil crisis, as a means of finding an alternative to fossil fuels, and was completed in 1985 by Akiro Yoshino after the contributions of other scientists. Today, lithium-ion batteries are considered one of the best rechargeable batteries and a sustainable energy alternative.</p>
+    </div>
+    <div class="carousel-item">
+      <h3>Benefits</h3>
+      <ul>
+			<li>Energy density can reach up to 260 Wh/kg, the highest of all rechargeable batteries</li>
+			<li>Can deliver up to 3.6 Volts</li>
+			<li>Easy to maintain as they do not require any specific priming equipment or scheduled cycling</li>
+			<li>Doesn’t have any “memory effect”, meaning that recharging doesn’t lower its capacity</li>
+			<li>Its self-discharge rate is very low, approximately 1.5-2% discharge per month</li>
+			<li>Fast charging, some of these batteries have been developed to be able give 100 miles of charge in only 5 minutes</li>
+      </ul>
+    </div>
+    <div class="carousel-item">
+      <h3>Limitations</h3>
+      <ul>
+			<li>Highly flammable, risks vehicle explosions</li>
+			<li>Fragile, risks being over charged or discharged if not properly protected</li>
+			<li>Lithium processing uses around 500,000 gallons of water per metric ton of lithium</li>
+			<li>Lithium extraction causes a lot of pollution in both the soil and the air, which often contaminates water sources for locals and nearby farms</li>
+			<li>Toxic and need to be disposed of carefully</li>
+			<li>Temperature sensitive, worsened performance in temperatures lower than 0°C (32°F) or higher than 50°C (122°F)</li>
+			<li>Expensive to case and transport, due to their sensitive nature</li>
+      </ul>
+    </div>
   </div>
 
-<div class="page">
-  <div class="pageHeader"><h1>About Us</h1></div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-mdb-target="#lithium-info"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-mdb-target="#lithium-info"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-  <div id="aboutContent" class="contentBoxSmall">
-    <div>
-      <div class="contentHeader"><h2>Info</h2></div>
-      <div class="contentHolder"><p>Lorem Ipsum etc. etc.</p></div>
-    </div>
-    <div>
-      <div class="contentHeader"><h2>Who We Are</h2></div>
-      <div class="contentHolder"><p>Lorem Ipsum etc. etc.</p></div>
-    </div>
-    <div>
-      <div class="contentHeader"><h2>More Info</h2></div>
-      <div class="contentHolder"><p>Lorem Ipsum etc. etc.</p></div>
-    </div>
-    <div>
-      <div class="contentHeader"><h2>What We Do</h2></div>
-      <div class="contentHolder"><p>Lorem Ipsum etc. etc.</p></div>
-    </div>
-  </div>
 
-  <div id="footer"><p>Copyright ©2021, Kate Yoshida</p></div>
 
 </div>
 
+
+
+
+<div id="hydrogen-fuel-cells" class="page">
+  <div class="pageHeader"><h1>Hydrogen Fuel Cells</h1></div>
+
+
+
+<div id="hydrogen-info" class="carousel slide" data-mdb-ride="carousel" data-mdb-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h3>Introduction</h3>
+      <p>The hydrogen fuel cell was made to run on hydrogen in order to cut carbon and carbon dioxide emissions. The ‘hydrogen economy’ refers to the idea of transforming our existing hydrocarbon-based infrastructure from static power generation to a full range of transportation applications.</p>
+      <p>In order to encourage the adoption of ZEVs by Canadians and Canadian businesses, the Government of Canada launched the Incentives for Zero-Emission Vehicles (iZEV) Program in May 2019. There are many different makes and models of eligible zero-emission vehicles for purchase or lease that provide consumers with iZEV Program incentives of up to $5,000.</p>
+    </div>
+	 <div class="carousel-item">
+	   <h3>How the Cell Works</h3>
+      <p>A fuel cell works much like an electric battery, converting chemical energy into electrical energy using the movement of charged hydrogen ions across an electrolyte membrane to generate current. There they recombine with oxygen to produce water – a fuel cell’s only emission, alongside hot air.</p>
+    </div>
+    <div class="carousel-item">
+      <h3>Benefits</h3>
+      <ul>
+			<li>No harmful products are formed, only water is produced during the reaction, thus this is an eco-friendly fuel cell which reduces carbon footprint.</li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+      </ul>
+    </div>
+    <div class="carousel-item">
+      <h3>One</h3>
+      <ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+      </ul>
+    </div>
+  </div>
+
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-mdb-target="#hydrogen-info"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-mdb-target="#hydrogen-info"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div id="alternatives" class="page">
+  <div class="pageHeader"><h1>Other Alternatives</h1></div>
+
+
+
+<div id="other-info" class="carousel slide" data-mdb-ride="carousel" data-mdb-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <ul>
+			<li>Lithium-Sulphur batteries - Lithium-sulfur might be a halfway-house replacement for lithium-ion, rather than a radical successor, but it is on the way and it will be a significant improvement.</li>
+
+<li>Graphene supercapacitors - Supercapacitors can charge and discharge much more efficiently than a battery. So although they hold less energy per unit of volume, they can do a much better job of actually supplying power and recharging.</li>
+
+<li>Redox flow batteries - By adding hydrochloric and sulfuric acid to the mix, researchers have produced prototype batteries with 70% more energy density than a lithium-ion battery of similar proportions.</li>
+		</ul>
+    </div>
+    <div class="carousel-item">
+      <ul>
+			<li>Bioelectrochemical batteries - This technology uses anaerobic bacteria to process acetate with a reduction/oxidation method that releases electrons. This one is in its infancy and researchers in the Netherlands have only got a prototype through 15 recharging cycles. Technically the bacteria could reproduce and the battery could have a near-infinite lifespan, but there are a lot of hurdles to overcome before this lithium-ion alternative becomes a production reality.</li>
+
+<li>Solid state batteries - Solid state drives (SSDs) have helped take data storage to a whole new level in laptops and the same technology could drive battery technology forward. Technically, solid-state batteries could provide the same kind of leap that thin-film batteries could provide over lithium-ion. Solid-state batteries won’t just offer benefits in terms of efficiency and packaging, they will also be much safer. The fire risk is reduced to virtually zero and recent Tesla crashes proved just what a bonus that could be. But it’s not going to be commercially viable for years.</li>
+		</ul>
+    </div>
+  </div>
+
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-mdb-target="#other-info"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-mdb-target="#other-info"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+</div>
+
+
+
+<div id="comparison" class="page">
+  <div class="pageHeader"><h1>Comparison</h1></div>
+
+  <div class="box">
+    <p>Hydrogen fuel cells offer a potentially very clean, energy-dense and easy to recharge energy source for vehicles and other systems, but are currently complicated, expensive and dangerous to operate. In comparison, Lithium-ion batteries, although less energy-dense and slower to recharge, are as clean, much cheaper, easier and safer to handle. More specifically, cylindrical lithium-ion cells like those used in the SIERRA and the FX are very stable and safe to use.
+
+<p>Overall, fuel cells are getting a hard look by manufacturers but Battery-Powered Electric Vehicles (BEV) development continues in earnest.</p>
+
+<p>The world will require battery electrics and fuel cell technologies to move toward more efficient, renewable and lower carbon transportation in the coming decades; we caution against an attitude of “either/or” – both technologies have advantages over the other, yet each has better uses and each should be thoughtfully deployed.
+</p>
+  </div>
+
+</div>
+
+
+
+
+<div id="conclusion" class="page">
+  <div class="pageHeader"><h1>Conclusion</h1></div>
+
+  <div class="box">
+    <p>Presently, tech companies tend more towards BEVs (Battery-Powered Electric Vehicles) because they consider electric powered vehicles to be the future, but they are not completely ruling out hydrogen fuel cells as those may also be a potential source of energy for the future if their limitations can be surpassed. In some countries, BEVs have gained a lot more momentum than FCEVS (Fuel-Cell-Powered Electric Vehicles). Most tech manufacturers are aiming to be completely electric by 2030-2035, but few have talked about taking the hydrogen route. Both technologies have potential pros and cons, and there is a huge room for improvement in either of them. By weighing in the benefits and limitations, we can hope to utilise this technology to the fullest.</p>
+  </div>
+
+</div>
+
+
+<div id="references" class="page">
+  <div class="pageHeader"><h1>References</h1></div>
+
+  <div class="box">
+      <ul>
+			<li>https://www.furosystems.com/news/hydrogen-fuel-cells-vs-lithium-ion-batteries-in-electric-vehicles/</li>
+<li>https://goenergylink.com/blog/4-benefits-of-lithium-ion-batteries/</li>
+<li>https://www.cei.washington.edu/education/science-of-solar/battery-technology/</li>
+<li>https://www.power-technology.com/comment/standing-at-the-precipice-of-the-hydrogen-economy/</li>
+<li>https://www.thermofisher.com/blog/microscopy/the-history-of-the-lithium-ion-battery/</li>
+<li>https://www.fluxpower.com/blog/hydrogen-fuel-cell-advantages-and-disadvantages-in-material-handling</li>
+<li>https://www.twi-global.com/technical-knowledge/faqs/what-are-the-pros-and-cons-of-hydrogen-fuel-cells</li>
+<li>https://tc.canada.ca/en/road-transportation/innovative-technologies/zero-emission-vehicles</li>
+<li>https://www.theguardian.com/environment/2021/jan/19/electric-car-batteries-race-ahead-with-five-minute-charging-times</li>
+<li>http://www.flashchargebatteries.com/problem/</li>
+<li>https://www.instituteforenergyresearch.org/renewable/the-environmental-impact-of-lithium-batteries/</li>
+<li>https://www.furosystems.com/news/hydrogen-fuel-cells-vs-lithium-ion-batteries-in-electric-vehicles</li>
+<li>https://www.garrettmotion.com/news/media/garrett-blog/hydrogen-fuel-cells-vs-battery-electrics-why-fuel-cells-are-a-major-contender/</li>
+<li>https://greenauthority.com/10-alternatives-to-lithium-ion-batteries-79/</li>
+      </ul>
+  </div>
+
+</div>
+
+
+<div id="credits" class="page">
+  <div class="pageHeader"><h1>Credits</h1></div>
+
+  <div id="creditList" class="box">
+    <p>Kate Yoshida - Lithium-ion Battery Research, Website</p>
+    <p>Akhirun Meem - Hydrogen Fuel Cell Research, Comparison, Conclusion</p>
+    <p>Siddhi Bansal - Other Alternatives</p>
+    <p>Vanessa Natalia</p>
+  </div>
+
+</div>
+
+
+
+
+<div id="footer"><p>Copyright ©2021, Kate Yoshida, </p></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
