@@ -1,29 +1,21 @@
-var questions = document.getElementsByClassName("question");
-var searchQuestion = document.getElementById("searchFAQ");
-var searchInput;
-var thisQuestion;
+var menudrop = document.getElementById("menudrop");
+var sidebar = document.getElementById("sidebar");
+var links = document.querySelectorAll("nav a");
 
-for (i = 0; i < questions.length; i++) {
-  questions[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var answer = this.nextElementSibling;
-    if (answer.style.maxHeight) {
-      answer.style.maxHeight = null;
-    } else {
-      answer.style.maxHeight = answer.scrollHeight + "px";
-    } 
-  });
+
+function toggleMenu() {
+  if (sidebar.style.maxHeight) {
+    sidebar.style.maxHeight = null;
+    menudrop.innerHTML = "<p>menu</p><p>v</p>";
+  } else {
+    sidebar.style.maxHeight = sidebar.scrollHeight + "px";
+    menudrop.innerHTML = "<p>menu</p><p>x</p>";
+  }
 }
 
 
+menudrop.addEventListener("click", function(){toggleMenu()});
 
-function SearchingFAQ() {
-  searchInput = searchQuestion.value.toUpperCase();
-  for (i = 0; i < questions.length; i++) {
-    thisQuestion = questions[i].textContent;
-    if (thisQuestion.toUpperCase().indexOf(searchInput) > -1) {
-      questions[i].classList.remove("hide");
-    } else {
-      questions[i].classList.add("hide");
-    }
-  }
+for (i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function(){toggleMenu()});
+}
